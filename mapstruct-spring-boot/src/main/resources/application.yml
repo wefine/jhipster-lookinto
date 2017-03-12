@@ -1,0 +1,7 @@
+spring:
+    datasource:
+        url: jdbc:mysql://mysqlhost:13306/jhipster?useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: root
+        password: mysqlroot
+    jpa:
+        database-platform: org.hibernate.dialect.MySQLDialect
