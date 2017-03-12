@@ -1,12 +1,12 @@
 package org.wefine.hipster.mapper;
 
 import org.mapstruct.Mapper;
-import org.wefine.hipster.domain.SimpleDestination;
+import org.wefine.hipster.dto.SimpleSourceDTO;
 import org.wefine.hipster.domain.SimpleSource;
 
 @Mapper
 public interface SimpleSourceDestinationMapper {
-    SimpleDestination sourceToDestination(SimpleSource source);
+    SimpleSourceDTO sourceToDestination(SimpleSource source);
 
-    SimpleSource destinationToSource(SimpleDestination destination);
+    SimpleSource destinationToSource(SimpleSourceDTO destination);
 }

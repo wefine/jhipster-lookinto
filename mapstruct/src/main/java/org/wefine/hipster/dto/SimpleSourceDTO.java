@@ -1,6 +1,6 @@
-package org.wefine.hipster.domain;
+package org.wefine.hipster.dto;
 
-public class SimpleDestination {
+public class SimpleSourceDTO {
 
     private String name;
     private String description;

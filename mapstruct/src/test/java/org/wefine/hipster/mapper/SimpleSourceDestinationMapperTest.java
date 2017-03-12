@@ -2,7 +2,7 @@ package org.wefine.hipster.mapper;
 
 import org.junit.Test;
 import org.mapstruct.factory.Mappers;
-import org.wefine.hipster.domain.SimpleDestination;
+import org.wefine.hipster.dto.SimpleSourceDTO;
 import org.wefine.hipster.domain.SimpleSource;
 
 import static org.junit.Assert.assertEquals;
@@ -17,7 +17,7 @@ public class SimpleSourceDestinationMapperTest {
         SimpleSource simpleSource = new SimpleSource();
         simpleSource.setName("SourceName");
         simpleSource.setDescription("SourceDescription");
-        SimpleDestination destination = mapper.sourceToDestination(simpleSource);
+        SimpleSourceDTO destination = mapper.sourceToDestination(simpleSource);
   
         assertEquals(simpleSource.getName(), destination.getName());
         assertEquals(simpleSource.getDescription(), 
@@ -26,7 +26,7 @@ public class SimpleSourceDestinationMapperTest {
  
     @Test
     public void givenDestinationToSource_whenMaps_thenCorrect() {
-        SimpleDestination destination = new SimpleDestination();
+        SimpleSourceDTO destination = new SimpleSourceDTO();
         destination.setName("DestinationName");
         destination.setDescription("DestinationDescription");
  
