@@ -12,7 +12,7 @@ public interface SuperheroMapper {
 
     @Mappings({
         @Mapping(source = "good", target = "alignment"),
-        @Mapping(target = "identity", expression = "java(new be.g00glen00b.dto.SuperheroIdentityDTO(superhero.getFirstName(), superhero.getLastName()))")
+        @Mapping(target = "identity", expression = "java(new org.wefine.hipster.dto.SuperheroIdentityDTO(superhero.getFirstName(), superhero.getLastName()))")
     })
     SuperheroDTO toSuperheroDTO(Superhero superhero);
 
